@@ -13,7 +13,7 @@ import com.sun.jdi.connect.spi.Connection;
 public class Conexao {
     public Connection getConnection() throws ClassNotFoundException{
         Connection conexao = null;
-        Class.forName = ("com.mysql.jbdc.");
+        Class.forName = ("com.mysql.jbdc.Driver");
         conexao = DriverManager.getConnection("jdbc:mysql://localhost/clinica","root",null);
         return conexao;
     }
