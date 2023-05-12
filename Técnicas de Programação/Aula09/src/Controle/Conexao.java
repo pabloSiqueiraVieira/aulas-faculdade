@@ -4,18 +4,25 @@
  */
 package Controle;
 
-import com.sun.jdi.connect.spi.Connection;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
 
 /**
  *
  * @author autologon
  */
 public class Conexao {
-    public Connection getConnection() throws ClassNotFoundException{
+    public static Connection getConnection() throws SQLException{
         Connection conexao = null;
-        Class.forName = ("com.mysql.jbdc.Driver");
-        conexao = DriverManager.getConnection("jdbc:mysql://localhost/clinica","root",null);
+        conexao = (Connection) (Conexao) DriverManager.getConnection("jdbc:mysql://localhost/clinica","root", null);
         return conexao;
+    }
+
+    PreparedStatement prepareStatement(String sql) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
     
 }
+    

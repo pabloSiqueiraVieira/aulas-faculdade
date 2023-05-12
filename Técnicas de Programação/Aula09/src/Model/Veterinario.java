@@ -1,7 +1,4 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package Model;
 
 /**
@@ -11,7 +8,7 @@ package Model;
 public class Veterinario {
     private int id;
     private  String nome;
-    private int crmv;
+    private String crmv;
     private String formacao;
     
     public int getId(){
@@ -25,15 +22,15 @@ public class Veterinario {
         return nome;
     }
     
-    public void setNome(){
-        this.nome = nome;
+    public String setNome(String string){
+        return nome;
     }
     
-    public int getCrmv(){
+    public String getCrmv(){
         return crmv;
     }
     
-    public void setCrmv(){
+    public void setCrmv(String crmv1){
         this.crmv = crmv;
     }
     
@@ -41,8 +38,12 @@ public class Veterinario {
         return nome;
     }
     
-    public void setFormacao(){
-        this.formacao = formacao;
+    public String setFormacao(){
+        return formacao;
+    }
+
+    public void setFomacao(String string) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
     
     
